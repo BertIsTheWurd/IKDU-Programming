@@ -15,9 +15,9 @@ public class MyFirstVariableAndMethod : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("I am " + currentAge + " years old");
-        Debug.Log("In one year I'll be " + oneYear(currentAge) + " years old");
-        Debug.Log("In " + yearsOfSome + " years I'll be " + someYear(currentAge) + " years old");
+        Debug.LogFormat("I am {0} years old", currentAge);
+        Debug.LogFormat("In one year I'll be {0} years old", oneYear(currentAge));
+        Debug.LogFormat("In {0} years I'll be {1} years old", yearsOfSome, someYear(currentAge));
     }
 
     // Update is called once per frame
